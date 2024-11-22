@@ -191,13 +191,13 @@ app.post("/api/sign-responsible", async (req, res) => {
         const resDBID = resDB._id.toString();
         // admin way: mostafa kadry id
         if (resDBID === "62e90db174361fe58938ac68") {
-          nextUrl = "/#/admin-dashbord";
+          nextUrl = "/fces-donation-system/#/admin-dashbord";
         }
         // treasury way: medhat elkady id
         else if (resDB.state === treasury) {
-          nextUrl = "/#/treasury";
+          nextUrl = "/fces-donation-system/#/treasury";
         } else {
-          nextUrl = "/#/res-dashbord";
+          nextUrl = "/fces-donation-system/#/res-dashbord";
         }
 
         return res
